@@ -1,0 +1,11 @@
+{
+    "name": "daraz-clone",
+    "private": true,
+    "scripts": {
+        "dev": "npx django-vite-hmr",
+        "postinstall": "pip install -r requirements.txt"
+    },
+    "devDependencies": {
+        "@django-vite/vite-server": "^1.0.1"
+    }
+}
