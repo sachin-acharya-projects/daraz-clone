@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .box-shadow {
+        box-shadow: 0 0 20px #000000a2;
+    }
+}
+
+
+.menu-button:hover {
+    span {
+        @apply text-primary-dark;
+        transition: 200ms all linear;
+    }
+
+    p {
+        @apply text-primary-dark font-medium;
+        transition: 200ms all linear;
+    }
+}
+
+.hide {
+    opacity: 0;
+    scale: 1 0;
+    transform-origin: top;
+
+    transition: 0.2s opacity linear, 0.2s scale linear;
+    animation: remove 0s linear 0.2s forwards;
+}
+
+.show {
+    opacity: 1;
+    scale: 1 1;
+    transform-origin: top;
+
+    transition: 0.2s opacity linear 0.2s, 0.2s scale linear 0.2s;
+    animation: 0s linear forwards;
+}
+
+@keyframes remove {
+    to {
+        display: block;
+    }
+}

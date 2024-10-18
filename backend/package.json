@@ -1,0 +1,10 @@
+{
+    "name": "backend",
+    "scripts": {
+        "dev": "concurrently 'py manage.py runserver' 'npx django-vite-hmr'",
+        "start": "py manage.py runserver",
+        "postinstall": "pip install -r requirements.txt"
+    },
+    "devDependencies": {
+    }
+}
